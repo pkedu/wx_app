@@ -33,7 +33,14 @@ App({
       }
     })
   },
+
   globalData: {
     userInfo: null
+  },
+
+  config: {
+    apiBase: 'http://pk.whjy.net/json',
+    apiImg: 'http://pk.whjy.net/assets/'
   }
+
 })

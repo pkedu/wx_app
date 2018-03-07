@@ -4,12 +4,46 @@
     "pages/logs/logs",
     "pages/school/school",
     "pages/teacher/teacher",
-    "pages/principal/principal"
+    "pages/principal/principal",
+
+    "pages/messages/messages",
+    "pages/profile/profile",
+    "pages/settings/settings"
+
   ],
+
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#3a4861",
     "navigationBarTitleText": "找学校",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"light"
+  },
+
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#444",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/home-active.png"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "text": "学校",
+        "iconPath": "assets/message.png",
+        "selectedIconPath": "assets/message-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/profile.png",
+        "selectedIconPath": "assets/profile-active.png"
+      }
+    ],
+    "position": "bottom"
   }
 }
