@@ -1,0 +1,4 @@
+/* pages/school/school.wxss */
+.usermap {
+  width: 100%;
+}
