@@ -1,4 +1,3 @@
-//app.js
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -39,7 +38,8 @@ App({
   },
 
   config: {
-    apiBase: 'http://pk.whjy.net/json',
+    //apiBase: 'https://locally.uieee.com',
+    apiBase: 'https://pk.whjy.net/json',
     apiImg: 'http://pk.whjy.net/assets/'
   }
 

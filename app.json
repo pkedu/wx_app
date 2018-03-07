@@ -6,6 +6,7 @@
     "pages/teacher/teacher",
     "pages/principal/principal",
 
+    "pages/list/list",
     "pages/messages/messages",
     "pages/profile/profile",
     "pages/settings/settings"

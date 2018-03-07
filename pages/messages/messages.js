@@ -11,12 +11,12 @@ Page({
    */
   onLoad (options) {
     const messages = this.data.messages
-    for (var i = 0; i < 18; i++) {
+    for (var i = 0; i < 10; i++) {
       messages.push({
-        title: '免费送票！超有内涵的门票。',
+        title: '武汉第一中学',
         date: i + ' September',
         image: 'https://unsplash.it/400/300',
-        summary: '最糟糕的，也许就是最幸运的。'
+        summary: '祖国的未来，人才的摇篮。'
       })
     }
 
