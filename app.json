@@ -2,9 +2,7 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/school/school",
-    "pages/teacher/teacher",
-    "pages/principal/principal",
+    "pages/map/map",
 
     "pages/list/list",
     "pages/messages/messages",

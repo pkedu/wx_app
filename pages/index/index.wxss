@@ -50,3 +50,15 @@
   width: 330rpx;
   height: 155rpx;
 }
+
+.title {
+  display: flex;
+  margin: 10rpx 0;
+  padding: 10rpx;
+  background-color: #fff;
+}
+
+.title text {
+  font-size: 28rpx;
+  color: #444;
+}

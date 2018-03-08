@@ -1,4 +1,7 @@
 <view class="weui-search-bar">
+  <view class="location">
+    <navigator url="/pages/map/map">我的位置</navigator>
+  </view>
   <view class="weui-search-bar__form">
     <view class="weui-search-bar__box">
       <icon class="weui-icon-search_in-box" type="search" size="14"/>
