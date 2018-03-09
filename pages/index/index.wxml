@@ -23,5 +23,3 @@
 <view class="title">
   <text>周边热门学校</text>
 </view>
-
-<navigator url="/pages/map/map">我的位置</navigator>
