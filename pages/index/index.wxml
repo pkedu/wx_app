@@ -1,7 +1,7 @@
 <include src="/includes/search-bar.wxml"/>
 
 <view class="showmap">
-  <map class="maps" id="map" longitude="114.260066" latitude="30.631482" scale="17" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+  <map class="maps" id="map" longitude="114.244739" latitude="30.653738" scale="17" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
 </view>
 
 <view class="grids">

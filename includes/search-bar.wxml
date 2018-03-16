@@ -1,8 +1,8 @@
 <view class="weui-search-bar">
   <view class="location">
-    <navigator url="/pages/map/map">
+    <navigator bindtap="moveToLocation">
       <image src="https://pk.whjy.net/mypic/wxapp/location.png"/>
-      <text>我的位置</text>
+      <text>位置</text>
     </navigator>
   </view>
   <view class="weui-search-bar__form">

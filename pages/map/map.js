@@ -12,6 +12,8 @@ Page({
       }
     })
   },
+
+  
   moveToLocation: function () {
     this.mapCtx.moveToLocation()
   },

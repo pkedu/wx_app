@@ -14,7 +14,7 @@
   height: 40rpx;
 }
 .location text{
-  font-size: 30rpx;
+  font-size: 28rpx;
 }
 
 page {
