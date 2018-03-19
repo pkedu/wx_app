@@ -4,18 +4,42 @@ var app = getApp()
 Page({
   data: {
     slides: [],
-    categories: []
-  },
+    categories: [],
 
-  markers: [{
-    id: 0,
-    iconPath: "https://pk.whjy.net/mypic/wxapp/map.png",
-    longitude: 114.244739,
-    latitude: 30.653738,
-    width: 30,
-    height: 30
-  }
-  ],
+    markers: [{
+      iconPath: "https://pk.whjy.net/mypic/wxapp/map.png",
+      id: 0,
+      latitude: 30.653738,
+      longitude: 114.244739,
+      width: 50,
+      height: 50
+    }],
+
+    polyline: [{
+      points: [{
+        longitude: 114.244888,
+        latitude: 30.653888
+      }, {
+        longitude: 114.244000,
+        latitude: 30.653000
+      }],
+      color: "#FF0000DD",
+      width: 2,
+      dottedLine: true
+    }],
+
+    controls: [{
+      id: 100,
+      iconPath: '../../assets/localtion.png',
+      position: {
+        left: 0,
+        top: 0,
+        width: 15,
+        height: 15
+      },
+      clickable: true
+    }]
+  },
 
   onReady: function (e) {
     // 使用 wx.createMapContext 获取 map 上下文
@@ -41,26 +65,19 @@ Page({
         this.setData({ categories: res.data })
       })
   
-    // 获取定位，并把位置标示出来
-    app.getLocationInfo(function (locationInfo) {
-      console.log('map', locationInfo);
-      this.setData({
-        longitude: locationInfo.longitude, 
-        latitude: locationInfo.latitude, 
-        markers: [{
-            id: 0, 
-            iconPath: "https://pk.whjy.net/mypic/wxapp/map.png", 
-            longitude: locationInfo.longitude, 
-            latitude: locationInfo.latitude, 
-            width: 30, 
-            height: 30
-          }
-        ]
-      })
-    })
-  
   },
   
+  regionchange(e) {
+    console.log(e.type)
+  },
+  markertap(e) {
+    console.log(e.markerId)
+  },
+  controltap(e) {
+    console.log(e.controlId)
+  },
+
+
 
   searchHandle () {
     // console.log(this.data.searchText)

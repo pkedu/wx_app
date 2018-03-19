@@ -63,7 +63,7 @@ App({
   config: {
     //apiBase: 'https://locally.uieee.com',
     apiBase: 'https://pk.whjy.net/json',
-    apiImg: 'http://pk.whjy.net/assets/'
+    apiImg: 'https://pk.whjy.net/assets/'
   }
 
 })

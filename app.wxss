@@ -9,14 +9,6 @@
   display: none;
 }
 
-.location image{
-  width: 40rpx;
-  height: 40rpx;
-}
-.location text{
-  font-size: 28rpx;
-}
-
 page {
   background-color: #f0f0f0;
 }
