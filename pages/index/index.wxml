@@ -8,16 +8,17 @@
 </view>
 
 <view class="showmap">
-  <map class="maps" id="map" longitude="114.244739" latitude="30.653738" scale="17" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
+  <map class="maps" id="MapForSchool" longitude="114.244739" latitude="30.653738" scale="16" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location></map>
 </view>
 
 <view class="grids">
-  <navigator class="item" wx:for="{{categories}}" wx:key="id" url="/pages/list/list?cat={{item.id}}">
+  <navigator class="item" wx:for="{{categories}}" wx:key="id" bindtap="ShowSchool">
     <image src="{{item.icon}}"/>
     <text>{{item.name}}</text>
   </navigator>
 </view>
 
+<!--
 <view class="links">
   <navigator url="/pages/list/list?type=recommend">
     <image src="/assets/link-01.png"/>
@@ -26,6 +27,7 @@
     <image src="/assets/link-02.png"/>
   </navigator>
 </view>
+-->
 
 <view class="title">
   <text>周边热门学校</text>

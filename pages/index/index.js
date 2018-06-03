@@ -15,6 +15,16 @@ Page({
       height: 50
     }],
 
+    covers: [{
+      latitude: 23.099994,
+      longitude: 113.344520,
+      iconPath: '/assets/location.png'
+    }, {
+      latitude: 23.099994,
+      longitude: 113.304520,
+      iconPath: '/assets/location.png'
+    }],
+
     polyline: [{
       points: [{
         longitude: 114.244888,
@@ -30,7 +40,7 @@ Page({
 
     controls: [{
       id: 100,
-      iconPath: '../../assets/localtion.png',
+      iconPath: '/assets/control.png',
       position: {
         left: 0,
         top: 0,
@@ -42,12 +52,25 @@ Page({
   },
 
   onReady: function (e) {
-    // 使用 wx.createMapContext 获取 map 上下文
-    this.mapCtx = wx.createMapContext('map')
+    this.mapCtx = wx.createMapContext('MapForSchool');
+    this.mapCtx.moveToLocation()
   },
 
   moveToLocation: function () {
     this.mapCtx.moveToLocation()
+  },
+
+  ShowSchool: function () {
+    this.mapCtx.includePoints({
+      padding: [10],
+      points: [{
+        latitude: 30.653738,
+        longitude: 114.244739,
+      }, {
+        latitude: 30.053738,
+        longitude: 114.244739,
+      }]
+    })
   },
 
   getCenterLocation: function () {

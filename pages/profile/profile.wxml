@@ -1,6 +1,7 @@
 <view class="avatar">
 
-  <image bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+  <!--<image bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" background-size="cover"></image>-->
+  <image src="/assets/avatar.png" background-size="cover"></image>
   <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   <!--<image src="/assets/avatar.png" bindtap="loginHandle"></image>-->
 </view>
@@ -17,12 +18,11 @@
 
 <view class="cells">
   <navigator class="item">个人资料</navigator>
-  <navigator class="item">我的优惠券</navigator>
+  <!--<navigator class="item">我的优惠券</navigator>-->
   <view class="divider"></view>
   <navigator class="item">常见问题</navigator>
   <navigator class="item">使用条款</navigator>
-  <navigator class="item">隐私权政策</navigator>
-  <navigator class="item">联系客服</navigator>
+  <navigator class="item">联系作者</navigator>
   <view class="divider"></view>
   <navigator url="/pages/settings/settings" class="item">设置</navigator>
 </view>
