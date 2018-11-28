@@ -44,8 +44,8 @@ App({
 
   config: {
     //apiBase: 'https://locally.uieee.com',
-    apiBase: 'https://pk.whjy.net/json',
-    apiImg: 'https://pk.whjy.net/assets/'
+    apiBase: 'https://so.whjy.net/json',
+    apiImg: 'https://so.whjy.net/assets/'
   }
 
 })
